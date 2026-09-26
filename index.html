@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Central de Links</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>🔗 Central de Links</h1>
+      <p class="aviso">🚀 Novos links são adicionados frequentemente.<br />Salve esta página nos favoritos e volte sempre para conferir as atualizações.</p>
+      <div id="estatisticas">
+        <span class="total">Total: <strong id="totalLinks">0</strong></span>
+        <span id="detalhesCategorias"></span>
+      </div>
+      <div class="pesquisa">
+        <input type="text" id="searchInput" placeholder="🔍 Pesquisar..." />
+      </div>
+      <div class="controles">
+        <button id="expandirTodos">▶ Expandir tudo</button>
+        <button id="recolherTodos">▼ Recolher tudo</button>
+      </div>
+    </header>
+
+    <main id="categories"></main>
+
+    <footer>
+      <span>Última atualização: <strong id="ultimaAtualizacao"></strong></span>
+      <span>Total de links: <strong id="totalRodape">0</strong></span>
+      <span>Versão: <strong>1.0.0</strong></span>
+    </footer>
+  </div>
+
+  <!-- Carrega os links primeiro -->
+  <script src="links.js"></script>
+  <!-- Depois a lógica -->
+  <script src="script.js"></script>
+</body>
+</html>
